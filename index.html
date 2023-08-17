@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
+<link rel="shortcut icon" type="image/x-icon" href="images/nestorvibe-ico.ico" />
+<title>NestorVibe</title>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="coming-soon-box">
+<a href="www.nestorvibe.com"><img alt="NestorVibe Logo" class="logo" src="images/nestorvibe-logo.jpeg"/></a>
+<h1>NestorVibe</h1>
+<p class="tagline">Elevate Every moment</p>
+<p class="coming-soon-text">Coming Soon</p>
+<p>Exclusivity has its rewards. Stay informed</p>
+<p>Follow us on:</p>
+<div class="social-icons">
+<a href="https://twitter.com/Nestorvibe" target="_blank"><img alt="twitter-logo" src="images/twitter-logo.png"/></a>
+<a href="https://www.pinterest.ie/Nestorvibe/" target="_blank"><img alt="pinterest-logo" src="images/pinterest-logo.png"/></a>
+<a href="https://www.instagram.com/nestorvibe" target="_blank"><img alt="Instagram" src="images/insta-logo.png"/></a>
+<a href="https://www.youtube.com/channel/UC6T98CkL_jGmac2snUK2sYw" target="_blank"><img alt="youtube-logo" src="images/youtube-logo.png"/></a>
+</div>
+<a href="mailto:nestorvibe01@gmail.com" target="_blank"><button class="contact-btn">Email Us</button></a>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var video = document.getElementById("bgVideo");
+    if (window.innerWidth <= 768) {
+        // For mobile devices
+        video.innerHTML = '<source src="images/coupledancing-02.mp4" type="video/mp4">Your browser does not support the video tag.';
+    } else {
+        // For larger screens
+        video.innerHTML = '<source src="images/coupledancing.mp4" type="video/mp4">Your browser does not support the video tag.';
+    }
+    video.load();
+});
+</script></body>
+</html>
